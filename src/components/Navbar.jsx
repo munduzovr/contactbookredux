@@ -11,7 +11,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import SvgIcon from '@mui/material/SvgIcon';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -63,13 +62,11 @@ const Navbar = () => {
                 textDecoration: 'none',
                 }}
             >
-                LOGO
-
-                
+                LOGO          
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <Button sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },color: "white", my:1 }} onClick={()=>{ navigate("/")}}>home</Button>
-            <Button sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },color: "white" }} onClick={()=>{ navigate("/add")}}>add todo</Button>
+            <Button sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },color: "white" }} onClick={()=>{ navigate("/add")}}>add contacts</Button>
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
